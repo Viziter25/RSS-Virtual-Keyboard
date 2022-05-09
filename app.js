@@ -2,7 +2,7 @@
 
 let keyboardEng = [ 96, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61, 8, '', 9, 113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, 'del', '', 20, 97, 115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13, '', 16, 122, 120, 99, 118, 98, 110, 109, 44, 46, 47, 38, 16, '', 17, 'win', 18, 32, 18, 37, 40, 'right', 17];
 
-let keyboardRu = [ 96, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61, 8, '', 9, 1081, 1094, 1091, 1082, 1077, 1085, 1075, 1096, 1097, 1079, 1093, 1098, 92, 'del', '', 20, 1092, 1099, 1074, 1072, 1087, 1088, 1086, 1083, 1076, 1078, 1101, 13, '', 16, 1103, 1095, 1089, 1084, 1080, 1090, 1100, 1073, 1102, 46, 38, 16, '', 17, 'win', 18, 32, 18, 37, 40, 'right', 17]
+let keyboardRu = [ 1105, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 45, 61, 8, '', 9, 1081, 1094, 1091, 1082, 1077, 1085, 1075, 1096, 1097, 1079, 1093, 1098, 92, 'del', '', 20, 1092, 1099, 1074, 1072, 1087, 1088, 1086, 1083, 1076, 1078, 1101, 13, '', 16, 1103, 1095, 1089, 1084, 1080, 1090, 1100, 1073, 1102, 46, 38, 16, '', 17, 'win', 18, 32, 18, 37, 40, 'right', 17]
 // let arr = [];
 // document.onkeypress = (event => {
 //     arr.push(event.charCode);
@@ -132,7 +132,7 @@ enter.addEventListener('click', () => {
      setTimeout(() => {
         enter.classList.remove('active');
     }, 200);
-    input.value = input.value + ' ';
+    input.value = input.value + '\n';
 });
 
 
@@ -152,35 +152,43 @@ down.addEventListener('click', () => {
 });
 
 
-// del
-del.addEventListener('click', () => {
-    
+// backspace
+backspace.addEventListener('click', () => {
+    let arrayDel = [];
+    arrayDel = (input.value).split('');
+    arrayDel.pop();
+    input.value = arrayDel.join('');
 });
 
 
-// shift
-// shift.addEventListener('click',() => {
-//     shift.classList.toggle('active');
-    
-// });
-
 
 document.onkeypress = function (event) {
+    
     // console.log(event.code);
-    console.log(event.key);
+    // console.log(event.key);
     document.querySelectorAll('#keyboard .k-key').forEach(element => {
         if (event.key == element.innerHTML) {
             element.classList.add('active');
-        }  else if (event.key == '' && element.innerHTML == 'Space') {
-             element.classList.add('active');
-        }
-        // все слуаи
+        } 
+        
     });
-    input.value = input.value + event.key;
+    console.log(event.code);
+    if (event.key == 'Enter') {
+        input.value = input.value + '\n';
+    } else {
+        input.value = input.value + event.key;
+    }
+   
 };
 
 document.addEventListener('keyup', (event) => {
     event.preventDefault();
+    if (event.key == 'Backspace') {
+        let arrayDel = [];
+        arrayDel = (input.value).split('');
+        arrayDel.pop();
+        input.value = arrayDel.join('');
+    }
     document.querySelectorAll('#keyboard .k-key').forEach(element => {
         element.classList.remove('active');
     });

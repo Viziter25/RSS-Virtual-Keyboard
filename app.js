@@ -24,7 +24,7 @@ container.append(div);
 const p = document.createElement('p');
 const p1 = document.createElement('p');
 p.innerHTML = 'Клавиатура создана в операционной системе Windows';
-p1.innerHTML = 'Для переключения языка комбинация: левыe ctrl + alt';
+p1.innerHTML = 'Для переключения языка комбинация: ctrl + alt';
 container.append(p);
 container.append(p1);
 

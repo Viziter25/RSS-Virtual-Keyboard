@@ -1,0 +1,287 @@
+.container {
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+}
+
+#keyboard {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;   
+}
+
+#keyboard::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.k-key {
+    background-color: rgb(165, 164, 164);
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.k-key:hover {
+   background-color: brown;
+}
+
+.backspace {
+    width: 124px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.backspace:hover {
+   background-color: brown;
+}
+
+.tab {
+    width: 60px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.tab:hover {
+   background-color: brown;
+}
+
+.del {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.del:hover {
+   background-color: brown;
+}
+
+.caps_lock {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.caps_lock:hover {
+   background-color: brown;
+}
+
+.enter {
+    width: 138px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.enter:hover {
+   background-color: brown;
+}
+
+.space {
+    background-color: rgb(165, 164, 164);
+    width: 436px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.space:hover {
+   background-color: brown;
+}
+
+.shift {
+    width: 119px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.shift:hover {
+   background-color: brown;
+}
+
+.ctrl {
+    width: 54px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.ctrl:hover {
+   background-color: brown;
+}
+
+.alt {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.alt:hover {
+   background-color: brown;
+}
+
+.win {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.win:hover {
+   background-color: brown;
+}
+
+.up {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.up:hover {
+   background-color: brown;
+}
+
+.left {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.left:hover {
+   background-color: brown;
+}
+
+.down {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+.down:hover {
+   background-color: brown;
+}
+
+.right {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.right:hover {
+   background-color: brown;
+}
+
+.clearfix { 
+    clear: both;
+}
+
+.active {
+    background-color: brown;
+}
+
+.input {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 975px;
+    height: 100px;
+}
